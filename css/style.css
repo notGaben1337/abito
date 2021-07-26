@@ -1,0 +1,89 @@
+.body {
+  font-family: "Roboto", sans-serif; /* шрифт для всего body */
+  font-size: 14px; /* размер шрифта */
+  color: #0a143a; /* цвет текста */
+}
+
+.header {
+  max-width: 1146px; /* Максимальная ширина */
+  margin: auto; /*Автовырвнивание по середине */
+  padding-top: 30px; /* отступ для header в 30px */
+}
+
+.navbar {
+  display: flex; /* делаем гибкий блок */
+  align-items: center; /* выравниваем по вертикали по центру */
+  justify-content: space-between; /* разбросать элементы по краям */
+  margin-bottom: 24px; /* Отступ снизу 24px */
+}
+
+.navbar-menu {
+  margin-right: auto; /* автоматический отступ справа */
+}
+
+.menu {
+  list-style: none; /* Отключаем точки в списке */
+  margin: 0; /* обнуляем отступы */
+  /* Внутренние отступы справа и слева */
+  padding-left: 22px;
+  padding-right: 22px;
+  display: flex;
+}
+
+/* Для всех пунктов меню кроме последенего отступ справа */
+.menu-item:not(:last-child) {
+  margin-right: 14px;
+}
+
+.menu-link {
+  text-decoration: none; /* Отключить подчёркивание ссылок */
+  color: inherit; /* взять цвет текста как у родителя(body) */
+}
+
+.button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 15px; /* отступ сверху и снизу 10px, слева и справа 15px */
+  cursor: pointer; /* при наведении на кнопку курсор меняется на указатель */
+}
+
+.button-link {
+  color: inherit; /* родительский цвет для кнопки авторизации */
+}
+
+.button-primary {
+  background: #256eeb; /* задал цвет для кнопки подачи */
+  border-radius: 5px; /* Скругление углов */
+  color: white;
+}
+
+.search-panel {
+  height: 50px; /*высота поисковой панели*/
+  background: #256eeb; /* цвет обводки поисковой панели */
+  border-radius: 5px; /* радиус скругления синей обводки поиска */
+  display: flex; /* кнопка и поле занимают всю высоту в search-panel */
+  padding: 3px; /* отступ со всех сторон в 3px */
+}
+
+.search-input {
+  flex-grow: 1; /*Поле поиска растягивается на всё свободное место */
+  background: #ffffff;
+  border-radius: 5px;
+  border: none; /*Отключаем обводку* */
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.search-button {
+  background: #256eeb; /* цвет кнопки */
+  border: none; /* Отключаем обводку кнопки */
+  color: white; /* цвет текста внутри кнопки */
+  padding-left: 20px; /* отступ слева */
+  padding-right: 17px; /* отступ справа */
+  display: flex;
+  align-items: center;
+}
+
+.search-button-text {
+  margin-left: 5px;
+}
