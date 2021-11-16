@@ -458,3 +458,26 @@
     display: none;
   }
 }
+
+@media (max-width: 992px) {
+  .content {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 870px) {
+  .content {
+    max-width: 200px;
+  }
+
+  .sidebar {
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 570) {
+  .header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
